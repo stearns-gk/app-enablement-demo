@@ -31,8 +31,8 @@ export default function GetBasketContents() {
 
   return (
     <div>
-        <div onClick={showData} class="">
-            <div class="showDataButton">Get Current Transaction</div>
+        <div onClick={showData} class="showBasketDiv">
+            <div class="showDataButton">Get Current Basket</div>
             <div  style={{display: showMe?"block":"none"}}>
                 {basketData.map(basketData => ( 
                 <div>
