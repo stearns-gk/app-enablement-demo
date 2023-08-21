@@ -10,18 +10,57 @@
 
 }
 
-.footer{
-  height: 60px;
-  width: 100%;
+.item {
+  margin-top: 80px;
+  background-color: white;
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  filter: drop-shadow(3px 3px 5px rgba(195, 195, 195, 0.25));
+
+}
+
+.item img {
+  margin-top: 10px;
   text-align: center;
+
 }
 
 
-.card { 
-  display: flex;
-  flex-direction: column;
+.showDataButton {
+  text-align: center;
+  border: 2px solid gray;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgba(179, 195, 255, 0.3);
+  filter: drop-shadow(3px 3px 5px rgba(210, 210, 210, 0.25));
+
 }
 
-.my-footer .card {
-  flex-direction: column-reverse;
+
+.footer {   
+  text-align: center;
+  position:fixed;    
+  bottom:20px;   
+  width:100%;    
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+}
+
+.red-background {
+  background: red;
+}
+
+.default-background {
+  background: white;
 }

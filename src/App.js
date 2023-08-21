@@ -1,5 +1,6 @@
 import './App.css';
 import BasicItemRegButton from './BasicItemRegButton';
+import GetBasketContents from './GetBasketContents';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
@@ -7,7 +8,7 @@ function App() {
   return (
     <div class="app">
       <Tabs
-        defaultActiveKey="profile"
+        defaultActiveKey="registerItem"
         id="uncontrolled-tab-example"
         className="tabArea"
         >
@@ -15,10 +16,10 @@ function App() {
           <BasicItemRegButton />
         </Tab>
         <Tab eventKey="getBasket" title="Basket">
-          Tab content for Profile
+          <GetBasketContents />
         </Tab>
-        <Tab eventKey="contact" title="Transaction">
-          Tab content for Contact
+        <Tab eventKey="transactionDetails" title="Transaction">
+          Tab content for Transaction
         </Tab>
       </Tabs>
 
