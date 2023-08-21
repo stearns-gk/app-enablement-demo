@@ -5,56 +5,15 @@
   bottom: 0;
 }
 
-.tabArea {
-  text-align: center;
 
-}
-
-.item {
-  margin-top: 60px;
+.dataDiv {
   background-color: white;
-  border: 2px solid rgb(210, 210, 210);
-  border-radius: 6px;
-  margin-left: 15%;
-  margin-right: 15%;
-  font-size: large;
-  font-weight: bold;
-  color: rgb(100, 100, 100);
-  filter: drop-shadow(3px 3px 5px rgba(195, 195, 195, 0.25));
-
-}
-
-.item img {
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 10px;
-  text-align: center;
-
-}
-
-.gkLogo {
-  text-align: left;
+  margin-bottom: 10px;
+  border: 2px solid rgb(235, 235, 235);
   padding: 5px;
-  background-color: rgb(245, 245, 245);
-}
-
-
-.showDataButton {
-  text-align: center;
-  /* border: 2px solid gray; */
-  border-radius: 4px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: medium;
-  font-weight: bold;
-  color: white;
-  margin-left: 15%;
-  margin-right: 15%;
-  background-color: rgba(63, 97, 222, 0.9);
-  filter: drop-shadow(3px 3px 5px rgba(210, 210, 210, 0.25));
-
-}
-
-.showBasketDiv {
-  margin-top: 20px;
 }
 
 
@@ -67,10 +26,54 @@
   margin-bottom: 10px;
 }
 
-.red-background {
-  background: red;
+
+.gkLogo {
+  text-align: left;
+  padding: 5px;
+  background-color: rgb(245, 245, 245);
 }
 
-.default-background {
-  background: white;
+
+.item {
+  margin-top: 60px;
+  background-color: white;
+  border: 2px solid rgb(210, 210, 210);
+  border-radius: 6px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(100, 100, 100);
+  filter: drop-shadow(3px 3px 5px rgba(195, 195, 195, 0.25));
+}
+
+
+.item img {
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+.showBasketDiv {
+  margin-top: 20px;
+}
+
+
+.showDataButton {
+  text-align: center;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: rgba(63, 97, 222, 0.9);
+  filter: drop-shadow(3px 3px 5px rgba(210, 210, 210, 0.25));
+}
+
+
+.tabArea {
+  text-align: center;
 }

@@ -23,8 +23,8 @@ function App() {
           <Tab eventKey="getBasket" title="Basket">
             <GetBasketContents />
           </Tab>
-          <Tab eventKey="transactionDetails" title="Transaction">
-            Tab content for Transaction
+          <Tab eventKey="couponDetails" title="Coupon">
+            Tab content for Coupon
           </Tab>
         </Tabs>
       </div>
