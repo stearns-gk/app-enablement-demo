@@ -4,6 +4,7 @@ import GetBasketContents from './GetBasketContents';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import gkLogo from './GK_Logo_RGB.png';
+import Coupons from './Coupons';
 
 function App() {
   return (
@@ -23,8 +24,8 @@ function App() {
           <Tab eventKey="getBasket" title="Basket">
             <GetBasketContents />
           </Tab>
-          <Tab eventKey="couponDetails" title="Coupon">
-            Tab content for Coupon
+          <Tab eventKey="enterCoupon" title="Coupons">
+            <Coupons />
           </Tab>
         </Tabs>
       </div>

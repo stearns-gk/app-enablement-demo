@@ -48,6 +48,7 @@ export default function BasicItemRegButton() {
         </div>
       </div>
 
+
       <div onClick={showData} class="footer">
         <div class="dataDiv" style={{display: showMe?"block":"none"}}>
             {jsonObject.map(jsonObject => ( 

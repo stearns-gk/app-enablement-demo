@@ -1,8 +1,28 @@
 .app {
   background-color: whitesmoke;
+  border-radius: 8px;
   text-align: center;
   min-height:  700px;
   bottom: 0;
+}
+
+.couponDiv {
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  background-color: rgba(63, 97, 222, 0.9);
+}
+
+
+.couponsTab{ 
+  padding-top: 100px;
 }
 
 
@@ -21,7 +41,8 @@
   text-align: center;
   position:fixed;    
   bottom:20px;   
-  width:100%;    
+  width:100%;  
+  /* padding-left: 10%;   */
   background-color: whitesmoke;
   margin-bottom: 10px;
 }
@@ -37,14 +58,14 @@
 .item {
   margin-top: 60px;
   background-color: white;
-  border: 2px solid rgb(210, 210, 210);
+  border: 1px solid rgb(230, 229, 229);
   border-radius: 6px;
   margin-left: 15%;
   margin-right: 15%;
   font-size: large;
   font-weight: bold;
   color: rgb(100, 100, 100);
-  filter: drop-shadow(3px 3px 5px rgba(195, 195, 195, 0.25));
+  filter: drop-shadow(3px 3px 3px rgba(195, 195, 195, 0.35));
 }
 
 
@@ -62,13 +83,14 @@
 .showDataButton {
   text-align: center;
   border-radius: 4px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: medium;
   font-weight: bold;
   color: white;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
   background-color: rgba(63, 97, 222, 0.9);
   filter: drop-shadow(3px 3px 5px rgba(210, 210, 210, 0.25));
 }

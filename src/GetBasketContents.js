@@ -46,17 +46,12 @@ export default function GetBasketContents() {
     "posItemID":"5678",
     "itemID":"5678",
     "itemName": "Stuff"
-  }
-  ,
-  {
-    "posItemID":"5678",
-    "itemID":"5678",
-    "itemName": "Stuff"
   }]
 
 
   return (
     <div>
+        {/* Button to perform a GET request of the current items in the basket */}
         <div onClick={showBasket} class="showBasketDiv">
             <div class="showDataButton">Get Current Basket</div>
             <div class="dataDiv" style={{display: basket ? "block" : "none" }}>
@@ -69,6 +64,7 @@ export default function GetBasketContents() {
                 ))}
             </div>
         </div>
+        {/* Button for getting other misc data from the POS */}
         <div onClick={showOtherData} class="showBasketDiv">
             <div class="showDataButton">Get Other Data</div>
             <div class="dataDiv" style={{display: data ? "block" : "none" }}>
