@@ -1,10 +1,10 @@
 import './App.css';
-import BasicItemRegButton from './BasicItemRegButton';
-import GetBasketContents from './GetBasketContents';
+import Basket from './Basket';
+import Coupons from './Coupons';
+import Items from './Items';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import gkLogo from './GK_Logo_RGB.png';
-import Coupons from './Coupons';
 
 function App() {
   return (

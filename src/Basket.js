@@ -1,26 +1,25 @@
-'use client'
-
 import './App.css';
 import React from 'react';
 import { useState } from 'react';
 
 
-export default function GetBasketContents() {
+
+export default function Basket() {
 
   const [basket, setShowBasket] = useState(false);
   const [data, setShowOtherData] = useState(false);
-
 
   // Function to toggle showing JSON data for basket items
   function showBasket(){
     setShowBasket(!basket);
   }
 
+  // Function to toggle showing JSON data for other items
   function showOtherData() {
     setShowOtherData(!data)
   }
   
-  // Dummy daya to delete. Just for displaying while developing. Will get from API call
+  // TODO: replace this dummy data with data from the API call. Just for displaying while developing.
   const basketData = [{
     "posItemID":"1234",
     "itemID":"1234",
@@ -28,11 +27,6 @@ export default function GetBasketContents() {
   }]
 
   const otherData = [{
-    "posItemID":"5678",
-    "itemID":"5678",
-    "itemName": "Stuff"
-  },
-  {
     "posItemID":"5678",
     "itemID":"5678",
     "itemName": "Stuff"

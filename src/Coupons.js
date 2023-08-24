@@ -1,24 +1,11 @@
-'use client'
-
 import './App.css';
 import React from 'react';
-import { useState } from 'react';
-
 
 
 
 export default function Coupons() {
-
-  const [showMe, setShowMe] = useState(false);
-
-
-  // Function to toggle showing JSON data for item to register
-  function showData(){
-    setShowMe(!showMe);
-  }
   
-  // JSON object to display in accordion in UI for demonstration purposes
-  // TODO: Replace with data to be POSTed
+  // TODO: Replace with data for POST request to register new coupon
   const couponObject = [{
     "couponId": "abc123",
     "percentage": "5%",

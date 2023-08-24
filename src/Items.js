@@ -1,27 +1,20 @@
-'use client'
-
 import './App.css';
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Accordion from 'react-bootstrap/Accordion';
-import Container from 'react-bootstrap/Container';
-import { Card } from 'react-bootstrap';
 import { useState } from 'react';
 import puppy from './puppy.PNG';
 
 
 
-export default function BasicItemRegButton() {
+export default function Items() {
 
   const [showMe, setShowMe] = useState(false);
-
 
   // Function to toggle showing JSON data for item to register
   function showData(){
     setShowMe(!showMe);
   }
   
-  // JSON object to display in accordion in UI for demonstration purposes
+  // TODO: replace this dummy data with data for the POST request for item registration
   const jsonObject = [{
     "posItemID":"1234",
     "itemID":"1234",
@@ -48,7 +41,7 @@ export default function BasicItemRegButton() {
         </div>
       </div>
 
-
+      {/* Button to show/hide the data for the POST request to register a new item */}
       <div onClick={showData} class="footer">
         <div class="dataDiv" style={{display: showMe?"block":"none"}}>
             {jsonObject.map(jsonObject => ( 
