@@ -21,6 +21,9 @@ export default function Coupons() {
         <div class="couponDiv">
             <span>10%</span>
         </div>
+        <div class="couponDiv">
+            <span>25%</span>
+        </div>
     </div>
   );
 }

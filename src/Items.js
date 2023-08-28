@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import { useState } from 'react';
-import puppy from './puppy.PNG';
+import puppy from './images/puppy.PNG';
 
 
 
@@ -30,16 +30,16 @@ export default function Items() {
 
 
   return (
-    <div>
-      <div class='item'>
-        <img width={150} height={150} src={puppy}></img>
-        <div>
-          <span>Puppy</span>
+      <div>
+        <div class='item'>
+          <img width={150} height={150} src={puppy}></img>
+          <div>
+            <span>Puppy</span>
+          </div>
+          <div>
+            <span>$200</span>
+          </div>
         </div>
-        <div>
-          <span>$200</span>
-        </div>
-      </div>
 
       {/* Button to show/hide the data for the POST request to register a new item */}
       <div onClick={showData} class="footer">

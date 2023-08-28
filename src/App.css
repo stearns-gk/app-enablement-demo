@@ -1,9 +1,78 @@
 .app {
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 8px;
   text-align: center;
   min-height:  700px;
   bottom: 0;
+}
+
+.buttonsGrid {
+  background-color: white;
+  display: grid;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 0px;
+}
+
+/* 4 grid items for 2x2 grid */
+.one {
+  margin-top: 60px;
+  background-color: white;
+  color:rgb(79, 79, 79);
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  grid-column: 1;
+  grid-row: 1;
+  margin-bottom: 15px;
+}
+
+
+.two {
+  margin-top: 60px;
+  background-color: white;
+  color:rgb(79, 79, 79);
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  grid-column: 2;
+  grid-row: 1;
+  margin-bottom: 15px;
+}
+
+
+.three {
+  background-color: white;
+  color:rgb(79, 79, 79);
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+
+.four {
+  background-color: white;
+  color:rgb(79, 79, 79);
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 6px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 
@@ -23,7 +92,7 @@
 
 
 .couponsTab{ 
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 
@@ -43,7 +112,6 @@
   position:fixed;    
   bottom:20px;   
   width:100%;  
-  /* padding-left: 10%;   */
   background-color: whitesmoke;
   margin-bottom: 10px;
 }
@@ -53,6 +121,15 @@
   text-align: left;
   padding: 5px;
   background-color: rgb(245, 245, 245);
+}
+
+
+.gridTitle {
+  margin-top: 50px;
+  border-bottom: 1px solid rgb(79, 79, 79);
+  color: rgb(80, 80, 80);
+  width: 60%;
+  margin-left: 20%;
 }
 
 
@@ -99,4 +176,5 @@
 
 .tabArea {
   text-align: center;
+  padding-top: 5px;
 }
