@@ -1,20 +1,14 @@
 import './App.css';
 import Basket from './Basket';
 import Coupons from './Coupons';
-import Items from './Items';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import gkLogo from './images/GK_Logo_RGB.png';
 import ItemsGrid from './ItemsGrid';
 import PromoGrid from './PromoGrid';
 
 function App() {
   return (
     <div>
-      {/* <div class='gkLogo'>
-        <img width={80}  src={gkLogo}></img>
-      </div> */}
-
       <div class="app">
         <Tabs
             defaultActiveKey="registerItem"
@@ -23,7 +17,6 @@ function App() {
             style={{fontSize:"13px"}}
             >
           <Tab eventKey="registerItem" title="Items">
-            {/* <Items /> */}
             <ItemsGrid />
           </Tab>
           <Tab eventKey="getBasket" title="Basket">
@@ -32,7 +25,7 @@ function App() {
           <Tab eventKey="enterCoupon" title="Coupons">
             <Coupons />
           </Tab>
-          <Tab eventKey="promotions" title="Recs">
+          <Tab eventKey="promotions" title="Promo">
             <PromoGrid />
           </Tab>
         </Tabs>

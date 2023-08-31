@@ -1,14 +1,39 @@
-
 import puppy from './images/puppy.PNG';
 import kitten from './images/kitten.png';
 import goldfish from './images/goldfish.jpg';
 import hamster from './images/hamster.jpg';
 
+import React from 'react';
+import { useState } from 'react';
 
-function ItemsGrid() {
+
+
+export default function ItemsGrid() {
+    
+    const [showMe, setShowMe] = useState(false);
+
+    // Function to toggle showing JSON data for item to register
+    function showData(){
+      setShowMe(!showMe);
+    }
+    
+    // TODO: add state and replace this dummy data with data for the POST request for item registration
+    const jsonObject = {
+      "posItemID":"1234",
+      "itemID":"1234",
+      "unitOfMeasureCode":"ABC",
+      "itemType":"AB",
+      "actualUnitPrice":200.00,
+      "quantity":1,
+      "receiptText":"Puppy",
+      "registrationNumber":"1234",
+      "mainPOSItemID":"1234",
+      "taxGroupID":"A1"
+    }
+
   return (
     <div>
-        <h4 class="gridTitle">Pets for Sale</h4>
+        <h4 class="gridTitle">Pets</h4>
         <div class="buttonsGrid">
             <div class="one">
                 <div class=''>
@@ -55,8 +80,25 @@ function ItemsGrid() {
                 </div>
             </div>
         </div>
+
+        {/* Button to show/hide the data for the POST request to register a new item */}
+      <div onClick={showData} class="footer">
+        <div class="footerData" style={{display: showMe ? "block" : "none"}}>
+            {
+                Object.keys(jsonObject).map(function (element) {
+                    return (
+                    <ul class="dataList">
+                        <li>
+                        <span class="keySpan">{element + ":"}</span>
+                        <span class="valueSpan">{jsonObject[element]}</span>
+                        </li>
+                    </ul>
+                    );
+                })
+            }
+            </div>
+            <div class="showDataButton">Show Data</div>
+        </div>
     </div>
   );
 }
-
-export default ItemsGrid;

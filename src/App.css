@@ -17,6 +17,8 @@
 
 /* 4 grid items for 2x2 grid */
 .one {
+  grid-column: 1;
+  grid-row: 1;
   margin-top: 60px;
   background-color: white;
   color:rgb(79, 79, 79);
@@ -26,13 +28,13 @@
   text-align: center;
   width: 150px;
   height: 150px;
-  grid-column: 1;
-  grid-row: 1;
   margin-bottom: 15px;
 }
 
 
 .two {
+  grid-column: 2;
+  grid-row: 1;
   margin-top: 60px;
   background-color: white;
   color:rgb(79, 79, 79);
@@ -42,13 +44,13 @@
   text-align: center;
   width: 150px;
   height: 150px;
-  grid-column: 2;
-  grid-row: 1;
   margin-bottom: 15px;
 }
 
 
 .three {
+  grid-column: 1;
+  grid-row: 2;
   background-color: white;
   color:rgb(79, 79, 79);
   font-size: medium;
@@ -57,12 +59,12 @@
   text-align: center;
   width: 150px;
   height: 150px;
-  grid-column: 1;
-  grid-row: 2;
 }
 
 
 .four {
+  grid-column: 2;
+  grid-row: 2;
   background-color: white;
   color:rgb(79, 79, 79);
   font-size: medium;
@@ -71,8 +73,6 @@
   text-align: center;
   width: 150px;
   height: 150px;
-  grid-column: 2;
-  grid-row: 2;
 }
 
 
@@ -97,14 +97,42 @@
 
 
 .dataDiv {
-  background-color: white;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 2px solid rgb(235, 235, 235);
-  padding: 5px;
+  background: rgba(255, 255, 255, 1.0);
+  background: linear-gradient(0deg, rgb(245, 245, 245), rgba(255, 255, 255, 1.0));
+  border-bottom: 1px rgb(235, 235, 235) solid;
+  padding-bottom: 10px;
+  font-size: 13px;
 }
+
+
+.dataList {
+  display: inline;
+  margin: 5px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+
+.dataList li {
+  height: 0px;
+}
+
+
+.keySpan {
+  display: inline;
+  position: absolute;
+  left: 8%;
+  width: 40%;
+  text-align: right;
+} 
+
+
+.valueSpan {
+  display: inline;
+  position: absolute;
+  text-align: left;
+  width:50%;
+} 
 
 
 .footer {   
@@ -112,8 +140,15 @@
   position:fixed;    
   bottom:20px;   
   width:100%;  
-  background-color: whitesmoke;
+  background-color: white;
   margin-bottom: 10px;
+}
+
+.footerData {
+  border-top: 1px rgb(235, 235, 235) solid;
+  background: rgba(255, 255, 255, 1.0);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 1.0), rgb(245, 245, 245));
+  padding-bottom: 20px;
 }
 
 
@@ -151,6 +186,7 @@
   margin-top: 10px;
   text-align: center;
 }
+
 
 
 .showBasketDiv {
