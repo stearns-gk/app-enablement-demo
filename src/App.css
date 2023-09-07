@@ -144,11 +144,13 @@
   margin-bottom: 10px;
 }
 
+
 .footerData {
   border-top: 1px rgb(235, 235, 235) solid;
   background: rgba(255, 255, 255, 1.0);
   background: linear-gradient(0deg, rgba(255, 255, 255, 1.0), rgb(245, 245, 245));
-  padding-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 100px;
 }
 
 
@@ -186,7 +188,6 @@
   margin-top: 10px;
   text-align: center;
 }
-
 
 
 .showBasketDiv {

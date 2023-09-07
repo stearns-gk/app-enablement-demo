@@ -1,8 +1,7 @@
 
 import dogleash from './images/dogLeash.jpeg';
 
-
-
+// TODO: Add object in state containing multiple items to show as recommended items based on which pet(s) have been added to the transaction
 function PromoGrid() {
   return (
     <div>

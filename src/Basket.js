@@ -3,8 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 
-
-export default function Basket() {
+function Basket() {
 
   const [basket, setShowBasket] = useState(false);
   const [data, setShowOtherData] = useState(false);
@@ -72,15 +71,10 @@ export default function Basket() {
                   );
                 })
               }
-                {/* {otherData.map(data => ( 
-                <div>
-                    <pre>{
-                    JSON.stringify(data, null, 1)
-                    }</pre>
-                </div>
-                ))} */}
             </div>
         </div>
     </div>
   );
 }
+
+export default Basket;

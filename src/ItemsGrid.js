@@ -1,3 +1,4 @@
+// Image grid images
 import puppy from './images/puppy.PNG';
 import kitten from './images/kitten.png';
 import goldfish from './images/goldfish.jpg';
@@ -8,7 +9,7 @@ import { useState } from 'react';
 
 
 
-export default function ItemsGrid() {
+function ItemsGrid() {
     
     const [showMe, setShowMe] = useState(false);
 
@@ -17,7 +18,7 @@ export default function ItemsGrid() {
       setShowMe(!showMe);
     }
     
-    // TODO: add state and replace this dummy data with data for the POST request for item registration
+    // TODO: add state and replace this dummy data with sample data for an item registration POST request
     const jsonObject = {
       "posItemID":"1234",
       "itemID":"1234",
@@ -85,6 +86,7 @@ export default function ItemsGrid() {
       <div onClick={showData} class="footer">
         <div class="footerData" style={{display: showMe ? "block" : "none"}}>
             {
+                // "Pretty" JSON display
                 Object.keys(jsonObject).map(function (element) {
                     return (
                     <ul class="dataList">
@@ -102,3 +104,6 @@ export default function ItemsGrid() {
     </div>
   );
 }
+
+
+export default ItemsGrid;

@@ -30,10 +30,7 @@ function App() {
           </Tab>
         </Tabs>
       </div> 
-
-
     </div>
-   
   );
 }
 
