@@ -37,7 +37,7 @@ function ItemsGrid() {
         <h4 class="gridTitle">Pets</h4>
         <div class="buttonsGrid">
             <div class="one">
-                <div class=''>
+                <div>
                     <img width={100} height={100} src={puppy}></img>
                     <div>
                         <span>Puppy</span>
@@ -48,7 +48,7 @@ function ItemsGrid() {
                 </div>
             </div>
             <div class="two">
-                <div class=''>
+                <div>
                     <img width={100} height={100} src={kitten}></img>
                     <div>
                         <span>Kitten</span>
@@ -59,7 +59,7 @@ function ItemsGrid() {
                 </div>
             </div>
             <div class="three">
-                <div class=''>
+                <div>
                     <img width={100} height={100} src={hamster}></img>
                     <div>
                         <span>Hamster</span>
@@ -70,7 +70,7 @@ function ItemsGrid() {
                 </div>
             </div>
             <div class="four">
-                <div class=''>
+                <div>
                     <img width={100} height={100} src={goldfish}></img>
                     <div>
                         <span>Goldfish</span>
