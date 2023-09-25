@@ -22,7 +22,7 @@ function PromoGrid() {
                 <div class=''>
                     <img width={100} height={100} src={dogleash}></img>
                     <div>
-                        <span>Dog Leash</span>
+                        <span>Dog Bowl</span>
                     </div>
                     <div>
                         <span>$5</span>
@@ -33,7 +33,7 @@ function PromoGrid() {
                 <div class=''>
                     <img width={100} height={100} src={dogleash}></img>
                     <div>
-                        <span>Dog Leash</span>
+                        <span>Doggie Treats</span>
                     </div>
                     <div>
                         <span>$5</span>
@@ -44,10 +44,10 @@ function PromoGrid() {
                 <div class=''>
                     <img width={100} height={100} src={dogleash}></img>
                     <div>
-                        <span>Dog Leash</span>
+                        <span>Dog Food</span>
                     </div>
                     <div>
-                        <span>$5</span>
+                        <span>$50</span>
                     </div>
                 </div>
             </div>

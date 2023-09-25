@@ -6,6 +6,7 @@ import Tabs from 'react-bootstrap/Tabs';
 import ItemsGrid from './ItemsGrid';
 import PromoGrid from './PromoGrid';
 
+
 function App() {
   return (
     <div>
@@ -22,9 +23,9 @@ function App() {
           <Tab eventKey="getBasket" title="Basket">
             <Basket />
           </Tab>
-          <Tab eventKey="enterCoupon" title="Coupons">
+          {/* <Tab eventKey="enterCoupon" title="Coupons">
             <Coupons />
-          </Tab>
+          </Tab> */}
           <Tab eventKey="promotions" title="Promo">
             <PromoGrid />
           </Tab>
